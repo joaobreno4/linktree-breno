@@ -23,9 +23,10 @@ export function ThemeToggle() {
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       aria-label={theme === "dark" ? "Ativar modo claro" : "Ativar modo escuro"}
       className="
-        inline-flex items-center justify-center size-9 rounded-full
-        text-zinc-500 dark:text-zinc-400
-        hover:bg-zinc-100 dark:hover:bg-zinc-800
+        inline-flex items-center justify-center size-9 rounded-full cursor-pointer
+        bg-zinc-100 dark:bg-zinc-800
+        text-zinc-600 dark:text-zinc-300
+        hover:bg-zinc-200 dark:hover:bg-zinc-700
         hover:text-zinc-900 dark:hover:text-zinc-100
         transition-colors duration-200
         focus-visible:outline-none focus-visible:ring-2
