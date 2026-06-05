@@ -30,7 +30,7 @@ Agregador de links pessoal estilo LinkTree, construído como primeiro desafio da
 **1. Clone e instale as dependências**
 
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/joaobreno4/linktree-breno.git
 cd linktree-breno
 npm install
 ```
