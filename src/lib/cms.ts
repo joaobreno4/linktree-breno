@@ -17,7 +17,19 @@ async function fetchProfileData(): Promise<ProfileData> {
     document = await client.getSingle("profile");
   } catch (error) {
     if (error instanceof prismic.NotFoundError) {
-      return { name: "Profile", bio: "", avatarUrl: null, links: [], socialLinks: [] };
+      return {
+        name: "João Breno",
+        bio: "DevOps Intern",
+        avatarUrl: null,
+        links: [
+          { title: "GitHub", url: "https://github.com/joaobreno4" },
+          { title: "LinkedIn", url: "https://www.linkedin.com/in/joaobreno4/" },
+        ],
+        socialLinks: [
+          { platform: "github", url: "https://github.com/joaobreno4" },
+          { platform: "linkedin", url: "https://www.linkedin.com/in/joaobreno4/" },
+        ],
+      };
     }
     throw error;
   }
