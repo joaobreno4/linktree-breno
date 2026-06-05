@@ -20,7 +20,7 @@ async function fetchProfileData(): Promise<ProfileData> {
       return {
         name: "João Breno",
         bio: "DevOps Intern",
-        avatarUrl: null,
+        avatarUrl: "https://media.licdn.com/dms/image/v2/D5603AQHLeRbTV6SVdQ/profile-displayphoto-shrink_200_200/B56ZYHTb_jHoAg-/0/1743879259234?e=1782345600&v=beta&t=oS9nJhqBPr5Qx21iI2TynVJ0Ym_Bxv7mnHDLzSeX0lY",
         links: [
           { title: "GitHub", url: "https://github.com/joaobreno4" },
           { title: "LinkedIn", url: "https://www.linkedin.com/in/joaobreno4/" },
